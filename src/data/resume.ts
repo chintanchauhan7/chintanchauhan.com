@@ -108,6 +108,13 @@ export const education = [
 
 export const projects = [
   {
+    title: "Inbound Firewall Manager (macOS)",
+    description:
+      "Host-based inbound firewall manager for macOS built on Tauri (Rust core) with a static HTML/CSS/JS frontend. Manages macOS's native pf packet filter with rule-based inbound filtering, zone/profile presets (Strict/Standard/Permissive), IP/CIDR blocklists with native rate-limiting, optional GeoIP blocking, and traffic logging — desktop-scale, in the spirit of a SonicWall/FortiGate.",
+    tags: ["Rust", "Tauri", "macOS pf", "SQLite", "Firewall"],
+    link: "https://github.com/chintanchauhan7/inbound-firewall",
+  },
+  {
     title: "Home SOC Lab — SIEM & Log Monitoring",
     description:
       "Self-hosted security operations lab using Wazuh/ELK to centralize log collection from Windows, Linux, and network devices, with custom detection rules for brute-force and lateral-movement patterns.",
