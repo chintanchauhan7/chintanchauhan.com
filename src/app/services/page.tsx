@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ConsultingNav from "@/components/ConsultingNav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import Testimonials from "@/components/Testimonials";
 import { profile } from "@/data/resume";
 import { consulting, serviceTiers } from "@/data/services";
 
@@ -89,11 +90,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        <Testimonials />
+
         <section id="contact" className="scroll-mt-20 py-16 sm:py-20 border-t border-border">
           <div className="mx-auto max-w-5xl px-6">
             <Reveal>
               <h2 className="font-mono text-sm text-accent mb-8 flex items-center gap-3">
-                <span className="text-muted">02</span>
+                <span className="text-muted">03</span>
                 <span className="text-foreground text-lg sm:text-xl font-semibold">
                   contact
                 </span>
