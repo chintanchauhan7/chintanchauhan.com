@@ -34,7 +34,10 @@ export default function Nav() {
         <ul className="hidden sm:flex items-center gap-6 text-muted">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="hover:text-accent transition-colors">
+              <a
+                href={link.href}
+                className="relative py-1 hover:text-accent transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
+              >
                 ./{link.label}
               </a>
             </li>

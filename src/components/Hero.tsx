@@ -1,4 +1,5 @@
 import { profile } from "@/data/resume";
+import TypedText from "@/components/TypedText";
 
 export default function Hero() {
   return (
@@ -10,8 +11,8 @@ export default function Hero() {
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-glow">
           {profile.name}
         </h1>
-        <p className="mt-4 font-mono text-lg sm:text-xl text-accent-2">
-          {profile.title}
+        <p className="mt-4 font-mono text-lg sm:text-xl text-accent-2 min-h-[1.75rem]">
+          <TypedText text={profile.title} />
         </p>
         <p className="mt-6 max-w-2xl text-muted leading-relaxed">
           {profile.summary}

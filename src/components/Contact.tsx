@@ -25,7 +25,7 @@ export default function Contact() {
               href={link.href}
               target={link.href.startsWith("http") ? "_blank" : undefined}
               rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="w-full sm:w-auto rounded-md border border-border px-5 py-2.5 font-mono text-sm text-foreground hover:border-accent hover:text-accent transition-colors"
+              className="w-full sm:w-auto rounded-md border border-border px-5 py-2.5 font-mono text-sm text-foreground transition-all duration-300 hover:border-accent hover:text-accent hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(57,255,156,0.15)]"
             >
               {link.label} <span className="text-muted">→ {link.value}</span>
             </a>
