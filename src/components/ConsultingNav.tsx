@@ -4,14 +4,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#about", label: "about" },
-  { href: "#skills", label: "skills" },
-  { href: "#experience", label: "experience" },
-  { href: "#projects", label: "projects" },
+  { href: "#overview", label: "overview" },
+  { href: "#offerings", label: "offerings" },
   { href: "#contact", label: "contact" },
 ];
 
-export default function Nav() {
+export default function ConsultingNav() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -28,10 +26,9 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between font-mono text-sm">
-        <a href="#top" className="text-accent">
-          chauhan<span className="text-foreground">@</span>portfolio
-          <span className="cursor-blink" />
-        </a>
+        <Link href="/" className="text-muted hover:text-accent transition-colors">
+          ← chauhan<span className="text-foreground">@</span>portfolio
+        </Link>
         <ul className="hidden sm:flex items-center gap-6 text-muted">
           {links.map((link) => (
             <li key={link.href}>
@@ -43,14 +40,6 @@ export default function Nav() {
               </a>
             </li>
           ))}
-          <li>
-            <Link
-              href="/services"
-              className="relative py-1 text-accent-2 hover:text-accent transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
-            >
-              ./services
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>
